@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "Offer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "OfferId": {
+      "type": "integer"
+    },
+    "CPA": {
+      "type": "decimal"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Language": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "text"
+    },
+    "key": {
+      "type": "text"
+    },
+    "lp": {
+      "type": "integer"
+    }
+  }
+}
