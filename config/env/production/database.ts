@@ -11,9 +11,9 @@ export default ({ env }: { env: (key: string, defaultValue?: any) => any }) => (
       autoMigration: true,
       migrations: {
         disableForeignKeys: false,
-        emitEvents: true
-      },
-      debug: env.bool('DATABASE_DEBUG', false)
+        emitEvents: true,
+        tableName: 'strapi_migrations'
+      }
     }
   }
 });

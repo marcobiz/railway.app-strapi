@@ -5,9 +5,10 @@
   "description": "A Strapi application",
   "scripts": {
     "build": "strapi build",
-    "deploy": "strapi deploy",
+    "deploy": "yarn build && NODE_ENV=production yarn strapi schema:sync --force",
     "develop": "strapi develop",
     "start": "strapi start",
+    "migrate": "NODE_ENV=production yarn strapi schema:sync --force --debug",
     "strapi": "strapi"
   },
   "dependencies": {
