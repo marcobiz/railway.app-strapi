@@ -4,11 +4,10 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    "build": "strapi build",
+    "build": "yarn strapi build && yarn strapi db:migrate",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
-    "start": "strapi start",
-    "migrate": "NODE_ENV=production yarn strapi schema:sync --force --debug",
+    "start": "yarn strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
