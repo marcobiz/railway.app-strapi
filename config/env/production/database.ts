@@ -12,5 +12,8 @@ export default ({ env }) => ({
         rejectUnauthorized: env('DATABASE_SSL_REJECT_UNAUTHORIZED') === 'true'
       } : false,
     },
+    options: {
+      autoMigration: true, // Abilita migrazioni automatiche
+    },
   },
 });
